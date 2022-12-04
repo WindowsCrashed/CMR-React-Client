@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'DancingScript';
+    src: url('../public/assets/fonts/DancingScript-3j68.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../public/assets/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: OpenSans;
+}
+
+.brand {
+    font-family: 'DancingScript';
+}
+
+.content {
+    display: grid;
+    box-sizing: border-box;
+    height: 91.7vh;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+.capital-first::first-letter {
+    text-transform: capitalize;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.border-bottom {
+    border-bottom: solid 2px black;
+    padding-bottom: 20px;
+}
+
+.border-bottom-thin {
+    border-bottom: solid 1px black;
+    padding-bottom: 25px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    background-color: black;
+    font-size: 1.5em;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e04949;
+}
+
+.btn-success {
+    background-color: rgb(41, 187, 77);
+    font-size: 1.5em;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: rgb(143, 218, 162);
+}
+
+.btn-danger {
+    background-color: #e04949;
+    font-size: 1.5em;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #ff9494;
+}
+
+table a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
