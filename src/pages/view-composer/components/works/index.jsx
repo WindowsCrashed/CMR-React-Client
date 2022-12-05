@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Works({works}) {
-    if (works === undefined) return
-
     return (
         <div className="works-container">
             <ul id="list-pieces">

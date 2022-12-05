@@ -1,10 +1,8 @@
 import React from 'react'
 
-function TableRow({values, keyId}) {    
+function TableRow({values}) {    
     return (
-        <tr key={keyId}>
-            {values.map((v, index) => <td key={index}>{v}</td>)}
-        </tr>
+        <tr>{values.map((v, index) => <td key={index}>{v}</td>)}</tr>
     )
 }
 

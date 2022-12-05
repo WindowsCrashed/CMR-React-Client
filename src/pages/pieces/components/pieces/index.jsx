@@ -16,7 +16,7 @@ class Pieces extends Component {
                     <SearchBar/>
                 </div>
                 <div className="table-container">
-                    <Table row={PieceRow} route={'pieces'}/>   
+                    <Table row={PieceRow} headers={['Composer', 'Name', 'Catalog', 'Key']} route={'pieces'}/>   
                 </div>
             </main>
         )

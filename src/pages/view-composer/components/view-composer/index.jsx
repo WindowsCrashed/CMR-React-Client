@@ -8,15 +8,17 @@ import '../style.css'
 
 function ViewComposer() {
     const [data, setData] = useState([])
+    const [loaded, setLoaded] = useState(false)
     const query = useParams()
 
     useEffect(() => {
         // Fix later
         axios(`https://localhost:7000/api/composers/${query.id}`)
         .then(res => {
-            // console.log(res.data.history)
             // console.log(query)
-            return setData(res.data)
+            setData(res.data)
+            setLoaded(true)
+            return res
         }).catch(console.log)
     }, [query])
 
@@ -32,6 +34,8 @@ function ViewComposer() {
     }
 
     return (
+        loaded &&
+
         <div className="content content-composer">
             <header className="title-container border-bottom">
                 <h1 className="title">{`${data.name} ${data.lastName}`}</h1>

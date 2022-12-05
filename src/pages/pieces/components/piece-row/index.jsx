@@ -13,7 +13,7 @@ function PieceRow({values}) {
     ]
 
     return (
-        <TableRow keyId={id} values={trValues}/>
+        <TableRow values={trValues}/>
     )
 }
 

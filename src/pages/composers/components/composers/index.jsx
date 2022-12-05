@@ -16,7 +16,7 @@ class Composers extends Component {
                     <SearchBar/>
                 </div>
                 <div className="table-container">
-                    <Table row={ComposerRow} route={'composers'}/>
+                    <Table row={ComposerRow} headers={['Last Name', 'Name', 'Nationality', 'Musical Period']} route={'composers'}/>
                 </div>
             </main>
         )
