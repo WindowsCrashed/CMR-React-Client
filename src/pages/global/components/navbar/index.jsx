@@ -9,29 +9,29 @@ class NavBar extends Component {
         return (
             <React.Fragment>
                 <nav>
-                    <div class="navbar">
-                        <div class="nav-left">
-                            <div class="brand">
-                                <Link class="button" nav-btn to="/">Classical Music Repository</Link>
+                    <div className="navbar">
+                        <div className="nav-left">
+                            <div className="brand">
+                                <Link className="button" to="/">Classical Music Repository</Link>
                             </div>
-                            <div class="navigation">
+                            <div className="navigation">
                                 <ul>
                                     <li>
-                                        <Link class="button nav-btn" nav-btn to="/pieces">Pieces</Link>
+                                        <Link className="button nav-btn" to="/pieces">Pieces</Link>
                                     </li>
                                     <li>
-                                        <Link class="button nav-btn" nav-btn to="/composers">Composers</Link>
+                                        <Link className="button nav-btn" to="/composers">Composers</Link>
                                     </li>
                                     <li>
-                                        <Link class="button nav-btn" nav-btn to="/contribute">Contribute</Link>
+                                        <Link className="button nav-btn" to="/contribute">Contribute</Link>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="nav-right">
+                        <div className="nav-right">
                             <SearchBar/>
-                            <div class="login">
-                                <Link class="button nav-btn" nav-btn to="/login">Log in</Link>
+                            <div className="login">
+                                <Link className="button nav-btn" to="/login">Log in</Link>
                             </div>
                         </div>
                     </div>    

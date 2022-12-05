@@ -6,9 +6,9 @@ class SearchBar extends Component {
     render() { 
         return (
             <React.Fragment>
-                <form action="" class="search">
+                <form action="" className="search">
                     <input name="s" id=""/>
-                    <button><i class="fa fa-search"></i></button>
+                    <button><i className="fa fa-search"></i></button>
                 </form>
             </React.Fragment>
         )
