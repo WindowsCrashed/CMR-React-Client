@@ -12,10 +12,10 @@ class Pieces extends Component {
                 <div className="title-container">
                     <h1 className="title">Find a piece in our repository</h1>
                 </div>    
-                <div className="search-container" id="search-piece">
+                <div className="search-container">
                     <SearchBar/>
                 </div>
-                <div className="table-container" id="piece-table">
+                <div className="table-container">
                     <Table row={PieceRow} route={'pieces'}/>   
                 </div>
             </main>

@@ -6,8 +6,8 @@ function ComposerRow({values}) {
     const {id, name, lastName, nationality, period } = values
 
     const trValues = [
-        <Link to={`/${id}`}>{lastName}</Link>,
-        <Link to={`/${id}`}>{name}</Link>,
+        <Link to={`/composers/${id}`}>{lastName}</Link>,
+        <Link to={`/composers/${id}`}>{name}</Link>,
         nationality,
         period
     ]

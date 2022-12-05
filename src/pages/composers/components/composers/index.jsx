@@ -12,10 +12,10 @@ class Composers extends Component {
                 <div className="title-container">
                     <h1 className="title">Find a composer in our repository</h1>
                 </div>    
-                <div className="search-container" id="search-composer">
+                <div className="search-container">
                     <SearchBar/>
                 </div>
-                <div className="table-container" id="composer-table">
+                <div className="table-container">
                     <Table row={ComposerRow} route={'composers'}/>
                 </div>
             </main>
