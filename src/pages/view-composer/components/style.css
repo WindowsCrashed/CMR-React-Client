@@ -33,6 +33,7 @@
 .comp-img-wrapper {
     display: flex;
     align-items: center;
+    width: 225px;
 }
 
 .comp-img-wrapper img {
