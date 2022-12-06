@@ -7,7 +7,7 @@ function PieceRow({values}) {
 
     const trValues = [
         <Link to={`/composers/${composerId}`}>{composer}</Link>,
-        <Link to={`/${id}`}>{name}</Link>,
+        <Link to={`/pieces/${id}`}>{name}</Link>,
         catalog,
         tonality
     ]

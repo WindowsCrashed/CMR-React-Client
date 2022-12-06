@@ -10,7 +10,7 @@ class Login extends Component {
                     <h1 className="title">Log in</h1>
                 </header>
                 <main>
-                    <form id="login-form">
+                    <form>
                         <div className="input-container">
                             <label>
                                 <span>Email or username</span>
@@ -23,7 +23,7 @@ class Login extends Component {
                         </div>
                         <div className="btn-container">
                             <button className="button btn-success">Log in</button>
-                            <button id="cancel" className="button btn-primary">Create account</button>
+                            <button className="button btn-primary">Create account</button>
                         </div>
                     </form>
                 </main>

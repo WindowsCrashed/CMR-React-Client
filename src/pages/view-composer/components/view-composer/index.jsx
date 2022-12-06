@@ -46,7 +46,7 @@ function ViewComposer() {
                     <div className="info-img-container">
                         <InfoTable data={setGeneralInfo(data)}/>
                         <div className="comp-img-wrapper">
-                            <img id="comp-img" src={`https://localhost:7000/api/files/imgs/${data.imgPath}`} alt="portrait"/>
+                            <img src={`https://localhost:7000/api/files/imgs/${data.imgPath}`} alt="portrait"/>
                         </div>
                     </div>
                 </section>

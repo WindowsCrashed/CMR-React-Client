@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Works({works}) {
     return (
         <div className="works-container">
-            <ul id="list-pieces">
+            <ul>
                 {works.map((work, index) =>
                     <li key={index}>
                         <Link to={`/pieces/${work.id}`}>

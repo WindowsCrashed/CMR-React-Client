@@ -8,6 +8,7 @@ import Home from './pages/home/components/home'
 import Pieces from './pages/pieces/components/pieces'
 import Login from './pages/login/components/login'
 import ViewComposer from './pages/view-composer/components/view-composer'
+import ViewPiece from './pages/view-piece/components/view-piece'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/contribute' element={<Contribute />}/>
             <Route path='/login' element={<Login />}/>
             <Route path='/composers/:id' element={<ViewComposer />}/>
+            <Route path='/pieces/:id' element={<ViewPiece />}/>
         </Routes>
       </BrowserRouter>
     </React.Fragment>
