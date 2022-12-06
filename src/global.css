@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'DancingScript';
-    src: url('../public/assets/fonts/DancingScript-3j68.ttf');
+    src: url('./assets/fonts/DancingScript-3j68.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans';
-    src: url('../public/assets/fonts/OpenSans/OpenSans-Regular.ttf');
+    src: url('./assets/fonts/OpenSans/OpenSans-Regular.ttf');
 }
 
 body {
