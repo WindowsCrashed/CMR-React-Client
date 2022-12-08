@@ -1,32 +1,3 @@
-.content-piece {
-    justify-content: center;
-    grid-template-rows: 140px 1fr;
-    grid-template-columns: 850px;
-}
-
-.title {
-    font-size: 2.3em;
-    white-space: nowrap;
-}
-
-.info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info-container table {
-    max-width: 100%;
-}
-
-.content-piece th, td {
-    padding: 5px 10px;
-}
-
-.content-piece th {
-    text-align: right;
-}
-
 iframe {
     width: calc(560px * 1.5);
     height: calc(340px * 1.5);

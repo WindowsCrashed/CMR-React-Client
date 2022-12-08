@@ -7,3 +7,11 @@
 .info-container table {
     max-width: 100%;
 }
+
+.info-container th, td {
+    padding: 5px 10px;
+}
+
+.info-container th {
+    text-align: right;
+}

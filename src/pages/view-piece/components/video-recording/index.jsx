@@ -1,18 +1,17 @@
 import React from 'react'
 import InfoTable from '../../../global/components/info-table'
 
-function VideoRecording({videoSrc, performers, channel}) {
+function VideoRecording({url, performers, channel}) {
     return (
-        <React.Fragment>
-            <h3>Video Recording</h3>
-            <div className="rec-vid-container">
-                <iframe src={`https://www.youtube.com/embed/${videoSrc}`} frameBorder="0"></iframe>
-                <InfoTable data={[
-                    ["Performers", performers],
-                    ["Channel", channel]
-                ]}/>
+        <div className="rec-vid-container">
+            <div>
+                <iframe title="Video Recording" src={`https://www.youtube.com/embed/${url}`} frameBorder="0"></iframe>
             </div>
-        </React.Fragment>
+            <InfoTable data={[
+                ["Performers", performers],
+                ["Channel", channel]
+            ]}/>
+        </div>
     )
 }
 

@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom'
 import InfoTable from '../../../global/components/info-table'
 import History from '../history'
 import Works from '../works'
+import InfoPage from '../../../../templates/info-page'
+import Section from '../../../../templates/section'
 import '../style.css'
 
 function ViewComposer() {
@@ -36,30 +38,22 @@ function ViewComposer() {
     return (
         loaded &&
 
-        <div className="content content-composer">
-            <header className="title-container border-bottom">
-                <h1 className="title">{`${data.name} ${data.lastName}`}</h1>
-            </header>
-            <main>
-                <section className="border-bottom">
-                    <h2>General Information</h2>
-                    <div className="info-img-container">
-                        <InfoTable data={setGeneralInfo(data)}/>
-                        <div className="comp-img-wrapper">
-                            <img src={`https://localhost:7000/api/files/imgs/${data.imgPath}`} alt="portrait"/>
-                        </div>
+        <InfoPage title={`${data.name} ${data.lastName}`}>
+            <Section title='General Information'>
+                <div className="info-img-container">
+                    <InfoTable data={setGeneralInfo(data)}/>
+                    <div className="comp-img-wrapper">
+                        <img src={`https://localhost:7000/api/files/imgs/${data.imgPath}`} alt="portrait"/>
                     </div>
-                </section>
-                <section className="border-bottom">
-                    <h2>History</h2>
-                    <History text={data.history}/>
-                </section>
-                <section>
-                    <h2>List of Works</h2>
-                    <Works works={data.pieces}/>
-                </section>    
-            </main>
-        </div>
+                </div>
+            </Section>
+            <Section title='History'>
+                <History text={data.history}/>
+            </Section>
+            <Section title='List of Works'>
+                <Works works={data.pieces}/>
+            </Section> 
+        </InfoPage>
     )
 }
  

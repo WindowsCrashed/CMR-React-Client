@@ -1,14 +1,3 @@
-.content-composer {
-    justify-content: center;
-    grid-template-rows: 140px 1fr;
-    grid-template-columns: 850px;
-}
-
-.title {
-    font-size: 2.3em;
-    white-space: nowrap;
-}
-
 .info-img-container {
     display: flex;
     align-items: center;
@@ -20,14 +9,6 @@
 
 .info-img-container .info-container {
     width: 80%;
-}
-
-.content-composer th, td {
-    padding: 5px 10px;
-}
-
-.content-composer th {
-    text-align: right;
 }
 
 .comp-img-wrapper {

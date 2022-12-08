@@ -1,0 +1,4 @@
+.subsection-divider > div:not(:last-child) {
+    border-bottom: solid 1px black;
+    padding-bottom: 25px;
+}

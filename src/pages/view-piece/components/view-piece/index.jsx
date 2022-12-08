@@ -4,6 +4,9 @@ import { useParams, Link } from 'react-router-dom'
 import InfoTable from '../../../global/components/info-table'
 import AudioRecording from '../audio-recording'
 import VideoRecording from '../video-recording'
+import InfoPage from '../../../../templates/info-page'
+import Section from '../../../../templates/section'
+import SubSection from '../../../../templates/subsection'
 import '../style.css'
 
 function ViewPiece() {
@@ -37,45 +40,30 @@ function ViewPiece() {
     return (
         loaded && 
 
-        <div className="content content-piece">
-            <header className="title-container border-bottom">
-                <h1 className="title">{`${data.name} in ${data.tonality}, ${data.catalog}`}</h1>
-            </header>
-            <main>
-                <section className="border-bottom">
-                    <h2>General Information</h2>
-                    <InfoTable data={setGeneralInfo(data)}/>
-                </section>
-                <section className="border-bottom">
-                    <h2>Performances</h2>
-                    <div className="border-bottom-thin">
-                        {data.audioRecordings.map((rec, index) => 
-                            <AudioRecording key={index} 
-                                imageSrc={rec.imagePath}
-                                audioSrc={rec.audioPath}
-                                performers={rec.performers}
-                                recordLabel={rec.recordLabel}/>
-                        )}
-                    </div>
-                    <div>
-                        {data.videoRecordings.map((rec, index) => 
-                            <VideoRecording key={index} 
-                                videoSrc={rec.url}
-                                performers={rec.performers}
-                                channel={rec.channel}/>
-                        )}
-                    </div>
-                </section>
-                <section>
-                    {/* Fix Sheet Music Later */}
-                    <h2>Sheet Music</h2>
-                    <div className="sheetmusic-container">
-                        <a href={data.sheetMusic[0].url}
-                            className="button btn-primary" target="blank">Click here to download</a>
-                    </div>
-                </section>    
-            </main>
-        </div>
+        <InfoPage title={`${data.name} in ${data.tonality}, ${data.catalog}`}>
+            <Section title='General Information'>
+                <InfoTable data={setGeneralInfo(data)}/>
+            </Section>
+            <Section title='Performances'>
+                <SubSection title='Audio Recordings'>
+                    {data.audioRecordings.map((rec, index) => 
+                        <AudioRecording key={index} {...rec}/>
+                    )}
+                </SubSection>
+                <SubSection title='Video Recordings'>
+                    {data.videoRecordings.map((rec, index) => 
+                        <VideoRecording key={index} {...rec}/>
+                    )}
+                </SubSection>
+            </Section>
+            <Section title='Sheet Music'>
+                {/* FIX LATER */}
+                <div className="sheetmusic-container">
+                    <a href={data.sheetMusic[0].url}
+                        className="button btn-primary" target="blank">Click here to download</a>
+                </div>
+            </Section> 
+        </InfoPage>
     )
 }
 
