@@ -9,6 +9,7 @@ import Pieces from './pages/pieces'
 import Login from './pages/login'
 import ViewComposer from './pages/view-composer'
 import ViewPiece from './pages/view-piece'
+import './utils.css'
 
 function App() {
   return (

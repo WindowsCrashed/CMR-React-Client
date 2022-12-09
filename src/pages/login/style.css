@@ -3,11 +3,6 @@
     grid-template-rows: 20% 1fr;
 }
 
-.content-login .title-container .title {
-    font-size: 4em;
-    margin: 0;
-}
-
 .input-container {
     display: flex;
     box-sizing: border-box;

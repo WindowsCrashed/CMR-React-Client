@@ -4,11 +4,6 @@
     gap: 15%;
 }
 
-.content-contribute .title-container .title {
-    font-size: 3.5em;
-    margin: 0;
-}
-
 .content-contribute .btn-container {
     display: flex;
     flex-direction: column;

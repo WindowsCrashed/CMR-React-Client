@@ -7,10 +7,8 @@ import Table from '../table'
 function ListPage({ title, tableData }) {
     return (
         <div className="content content-list">
-            <Header title={title}/>
-            <div className="search-container">
-                <SearchBar/>
-            </div>
+            <Header title={title} titleClasses='title-lg mb-70'/>
+            <SearchBar/>
             <div className="table-container">
                 <Table {...tableData}/>   
             </div>

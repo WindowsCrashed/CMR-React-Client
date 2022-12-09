@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './style.css'
+import Header from '../../templates/header'
 
 class Login extends Component {
     state = {  } 
     render() { 
         return (
             <div className="content content-login">
-                <header className="title-container">
-                    <h1 className="title">Log in</h1>
-                </header>
+                <Header title='Log in' titleClasses='title-lg mb-70'/>
                 <main>
                     <form>
                         <div className="input-container">

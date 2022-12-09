@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from '../../templates/header'
 import './style.css'
 
 class Contribute extends Component {
@@ -6,9 +7,7 @@ class Contribute extends Component {
     render() { 
         return (
             <main className="content content-contribute">
-                <div className="title-container">
-                    <h1 className="title">Make a contribution to our repository</h1>
-                </div>
+                <Header title='Make a contribution to our repository' titleClasses='title-lg mb-70'/>
                 <div className="btn-container">
                     <a className="button btn-primary" href="add-piece">Add a new piece</a>
                     <a className="button btn-primary" href="add-composer">Add a new composer</a>

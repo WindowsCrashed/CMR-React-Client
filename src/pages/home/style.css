@@ -3,44 +3,14 @@
     grid-template-rows: 368px 160px 1fr;
 }
 
-.content-main .title-container {
-    margin-top: 55px;
-}
-
-.content-main .title-container .title {
-    font-size: 5em;
-    margin: 0;
-}
-
-.content-main .subtitle-container {
+.subtitle-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content-main .subtitle-container .subtitle {
+.subtitle-container .subtitle {
     font-size: 1.5em;
-}
-
-.content-main .search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content-main .search {
-    width: 500px;
-    height: 50px;
-}
-
-.content-main .search input{
-    font-size: 1.5em;
-    padding: 0px 40px 0px 12px;
-}
-
-.content-main .search button{
-    font-size: 1.3em;
-    top: 10px;
 }
 
 .content-main .img-container {
