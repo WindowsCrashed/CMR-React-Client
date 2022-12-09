@@ -1,7 +1,7 @@
 import React from 'react'
-import '../style.css'
-import SearchBar from '../../../global/components/searchbar'
-import MusicLogo from '../../../../assets/imgs/msc.svg'
+import './style.css'
+import SearchBar from '../../templates/searchbar'
+import MusicLogo from '../../assets/imgs/msc.svg'
 
 function Home() {
     return (

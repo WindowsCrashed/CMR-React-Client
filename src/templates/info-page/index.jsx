@@ -5,7 +5,7 @@ import './style.css'
 function InfoPage({ title, children }) {
     return (
         <div className="content content-info">
-            <Header title={title}/>
+            <Header title={title} border={true}/>
             <main className='section-divider'>
                 { children }
             </main>

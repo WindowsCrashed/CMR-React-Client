@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoRow from './info-row'
+import InfoRow from './components/info-row'
 import './style.css'
 
 function InfoTable({data}) {   

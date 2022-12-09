@@ -1,12 +1,12 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import InfoTable from '../../../global/components/info-table'
-import History from '../history'
-import Works from '../works'
-import InfoPage from '../../../../templates/info-page'
-import Section from '../../../../templates/section'
-import '../style.css'
+import InfoTable from '../../templates/info-table'
+import History from './components/history'
+import Works from './components/works'
+import InfoPage from '../../templates/info-page'
+import Section from '../../templates/section'
+import './style.css'
 
 function ViewComposer() {
     const [data, setData] = useState([])

@@ -1,35 +1,35 @@
-.content-pieces {
+.content-list {
     justify-items: center;
-    grid-template-rows: 25% 16% 1fr;
+    grid-template-rows: 223.52px 143.05px 1fr;
 }
 
-.content-pieces .title-container .title {
+.content-list .title {
     font-size: 3.5em;
-    margin: 0px 0px 80px 0px;
+    margin-bottom: 80px;
 }
 
-.content-pieces .search-container {
+.content-list .search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content-pieces .search {
+.content-list .search {
     width: 500px;
     height: 50px;
 }
 
-.content-pieces .search input{
+.content-list .search input{
     font-size: 1.5em;
     padding: 0px 40px 0px 12px;
 }
 
-.content-pieces .search button{
+.content-list .search button{
     font-size: 1.3em;
     top: 10px;
 }
 
-.content-pieces .table-container {
+.content-list .table-container {
     display: flex;
     flex-direction: column;
     align-items: center;

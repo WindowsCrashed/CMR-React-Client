@@ -1,13 +1,13 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import InfoTable from '../../../global/components/info-table'
-import AudioRecording from '../audio-recording'
-import VideoRecording from '../video-recording'
-import InfoPage from '../../../../templates/info-page'
-import Section from '../../../../templates/section'
-import SubSection from '../../../../templates/subsection'
-import '../style.css'
+import InfoTable from '../../templates/info-table'
+import AudioRecording from './components/audio-recording'
+import VideoRecording from './components/video-recording'
+import InfoPage from '../../templates/info-page'
+import Section from '../../templates/section'
+import SubSection from '../../templates/subsection'
+import './style.css'
 
 function ViewPiece() {
     const [data, setData] = useState([])

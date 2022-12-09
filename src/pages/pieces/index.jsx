@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import './style.css'
-import TableHead from './table-head'
-import TableBody from './table-body'
 import { useLocation } from 'react-router-dom'
 import axios from 'axios'
+import PieceRow from './components/piece-row'
+import ListPage from '../../templates/list-page'
 
-function Table({ row: Row, headers, route }) {
+function Pieces() {
     const [data, setData] = useState([])
     const [loaded, setLoaded] = useState(false)
     const query = useLocation().search
-
+    const route = 'pieces'
+    
     useEffect(() => {
         // Fix later
         axios(`https://localhost:7000/api/${route}/${query.substring(3)}`)
@@ -20,15 +20,17 @@ function Table({ row: Row, headers, route }) {
         })
         .catch(console.log)
     }, [query, route])
-    
+
     return (
         loaded &&
 
-        <table className='table'>
-            <TableHead values={headers}/>
-            <TableBody row={Row} data={data}/>
-        </table>
+        <ListPage title='Find a piece in our repository'
+            tableData={{
+                headers: ['Composer', 'Name', 'Catalog', 'Key'],
+                row: PieceRow,
+                data: data
+            }}/>
     )
 }
-
-export default Table
+ 
+export default Pieces

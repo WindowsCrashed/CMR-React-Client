@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import TableRow from '../../../global/components/table/table-row'
+import TableRow from '../../../../templates/table/components/table-row'
 
 function ComposerRow({values}) {
     const {id, name, lastName, nationality, period } = values

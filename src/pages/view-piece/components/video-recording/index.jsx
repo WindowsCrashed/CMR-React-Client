@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoTable from '../../../global/components/info-table'
+import InfoTable from '../../../../templates/info-table'
 
 function VideoRecording({url, performers, channel}) {
     return (
