@@ -1,6 +1,10 @@
 .content-main {
     justify-content: center;
-    grid-template-rows: 25% 16% 18% 1fr;
+    grid-template-rows: 368px 160px 1fr;
+}
+
+.content-main .title-container {
+    margin-top: 55px;
 }
 
 .content-main .title-container .title {
@@ -10,7 +14,7 @@
 
 .content-main .subtitle-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
