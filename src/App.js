@@ -1,13 +1,15 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './global.css'
-import Composers from './pages/composers/components/composers'
-import Contribute from './pages/contribute/components/contribute'
-import NavBar from './pages/global/components/navbar'
-import Home from './pages/home/components/home'
-import Pieces from './pages/pieces/components/pieces'
-import Login from './pages/login/components/login'
-import ViewComposer from './pages/view-composer/components/view-composer'
+import Composers from './pages/composers'
+import Contribute from './pages/contribute'
+import NavBar from './templates/navbar'
+import Home from './pages/home'
+import Pieces from './pages/pieces'
+import Login from './pages/login'
+import ViewComposer from './pages/view-composer'
+import ViewPiece from './pages/view-piece'
+import './utils.css'
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
             <Route path='/contribute' element={<Contribute />}/>
             <Route path='/login' element={<Login />}/>
             <Route path='/composers/:id' element={<ViewComposer />}/>
+            <Route path='/pieces/:id' element={<ViewPiece />}/>
         </Routes>
       </BrowserRouter>
     </React.Fragment>

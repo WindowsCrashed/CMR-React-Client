@@ -1,0 +1,24 @@
+.content-main {
+    justify-content: center;
+    grid-template-rows: 368px 160px 1fr;
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle-container .subtitle {
+    font-size: 1.5em;
+}
+
+.content-main .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-main .img {
+    width: 30%;
+}

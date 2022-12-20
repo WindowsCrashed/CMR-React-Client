@@ -1,0 +1,45 @@
+iframe {
+    width: calc(560px * 1.5);
+    height: calc(340px * 1.5);
+    margin: 10px 0px;
+}
+
+.rec-vid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.rec-aud-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.rec-aud-container img {
+    height: 225px;
+    width: 225px;
+}
+
+.rec-aud-container audio {
+    width: 100%;
+}
+
+.rec-aud-container .info-audio-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: 605px;
+}
+
+.sheetmusic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}

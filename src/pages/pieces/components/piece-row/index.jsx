@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import TableRow from '../../../global/components/table/table-row'
+import TableRow from '../../../../templates/table/components/table-row'
 
 function PieceRow({values}) {
     const { id, composer, composerId, name, catalog, tonality } = values
 
     const trValues = [
         <Link to={`/composers/${composerId}`}>{composer}</Link>,
-        <Link to={`/${id}`}>{name}</Link>,
+        <Link to={`/pieces/${id}`}>{name}</Link>,
         catalog,
         tonality
     ]

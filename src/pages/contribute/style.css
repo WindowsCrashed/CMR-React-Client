@@ -1,0 +1,12 @@
+.content-contribute {
+    justify-content: center;
+    grid-template-rows: 25% 1fr;
+    gap: 15%;
+}
+
+.content-contribute .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}

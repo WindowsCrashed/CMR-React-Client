@@ -1,9 +1,0 @@
-.info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info-container table {
-    max-width: 100%;
-}
