@@ -6,14 +6,22 @@ export default function useApi(route, query) {
     const [loaded, setLoaded] = useState(false)
     
     useEffect(() => {
-        // Fix later
-        axios(`https://localhost:7000/api/${route}/${query}`)
+        const cancelToken = axios.CancelToken.source()
+        
+        axios(`https://localhost:7000/api/${route}/${query}`, { cancelToken: cancelToken.token })
         .then(res => {
             setData(res.data)
             setLoaded(true)
             return res
         })
-        .catch(console.log)
+        .catch(err => {
+            if (axios.isCancel(err)) return
+            console.log(err)
+        })
+
+        return () => {
+            cancelToken.cancel()
+        }
     }, [query, route])
 
     return {

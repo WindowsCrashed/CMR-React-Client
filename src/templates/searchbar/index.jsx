@@ -1,12 +1,12 @@
 import React from 'react'
 import './style.css'
 
-function SearchBar() {
+function SearchBar({ value, onChange, buttonDisabled }) {
     return (
         <div className="search-container">
             <form action="" className="search">
-                <input name="s" id=""/>
-                <button><i className="fa fa-search"></i></button>
+                <input name="s" value={value} onChange={e => onChange(e.target.value)}/>
+                <button disabled={buttonDisabled}><i className="fa fa-search"></i></button>
             </form>
         </div>
     )
